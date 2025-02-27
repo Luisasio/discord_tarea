@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sigmar&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --tipografia_gruesa: 'Sigmar', sans-serif;
+    --tipografia_delgada: 'Lato', sans-serif;
+    --color1: #23272a;
+    --morado: #8891F2;
+    --gris: #F6F6F6;
+}
+body{
+    font-family: var(--tipografia_delgada);
+    background-color: #f2f2f2;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+html{
+    scroll-behavior: smooth;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px red solid; */
+}
+.margen{
+    padding: 10px;
+}
+header{
+    background-color: var(--color1);
+}
+.logo_discord{
+    width: 124px;
+}
+.logo_discord img{
+    width: 100%;
+}
+.contenedor_menu ul{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    gap: 15px;
+}
+.contenedor_menu ul li a{
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn_blanco{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    color: var(--color1);
+    border-radius: 40px;
+    display: inline-block;
+}
+.contenedor_cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.contenedor_slide{
+    background-color: var(--color1);
+    color: white;
+}
+.contenedor_slide_info h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: var(--tipografia_gruesa);
+    font-weight: 400;
+}
+.btn_morado{
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--morado);
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+}
+.contenedor_slide span{
+    padding-left: 20px;
+}
+main{
+    border: 1px blue solid;
+    max-width: 550px;
+}
+.contenedor_slide_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor_slide_info figure{
+    border: 1px yellow solid;
+    max-width: 550px;
+}
+.contenedor_slide_info figure img{
+    width: 100%;
+    display: block;
+}
+.icono_menu{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+}
+.contenedor_login{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
